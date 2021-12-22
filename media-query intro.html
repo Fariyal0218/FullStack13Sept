@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* @media screen/speech/print/all and {
+        } */
+
+      @media screen and (min-width: 500px) and (max-width: 900px) {
+        .container {
+          background-color: black;
+          color: aliceblue;
+          display: flex;
+        }
+
+        .one{
+          background-color: blue;
+          color: aliceblue;
+        }
+
+        .three{
+          background-color: yellow;
+        }
+      }
+
+      @media  print and (orientation: landscape) {
+        p {
+          background-color: yellow;
+        }
+
+        .container{
+          display: flex;
+        }
+
+        h1 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Media Queries</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus
+        iure nulla veritatis esse ipsum distinctio consectetur dolore
+        repellendus culpa inventore at mollitia eos, omnis, aut qui dolorem.
+        Architecto, perferendis?
+      </p>
+
+      <section class="one">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="two">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="three">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+      <section class="four">
+        <h2>Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          dignissimos exercitationem odit consequuntur dicta atque? Omnis,
+          corporis ab? Est rerum vero quae tenetur dolore explicabo maxime
+          laudantium numquam labore. Accusantium.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

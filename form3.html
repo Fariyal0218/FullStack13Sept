@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--student registeration,
+         employee registeration,
+         flight booking form airindia website
+        train booking form icrtc-->
+        <form>
+            <label for="fname">Full Name</label>
+        <input autocapitalize="characters" autocomplete="off" required minlength="6" maxlength="10" placeholder="full name" value="Fariyal" id="fname" type="text"/>
+        <br />
+
+        <label for="age">Age</label>
+        <input  min="18" max="60" placeholder="age" id="age" type="number"/> 
+        <br />
+
+        <label for="email">Email</label>
+        <input autofocus autocomplete="on" required  type="email" name="email" id="email" />
+        <br />
+
+        <input type="text">
+        <label for="password">Password</label>
+        <input minlength="6" type="password" name="" id="">
+
+        <label for="Gender"></label>
+
+        <input checked name="gender" type="radio" />
+        <label for="">Male</label>
+
+        <input name="gender" type="radio" />
+        <label for="">Female</label>
+
+
+        <input name="gender" type="radio" />
+        <label for="">Other</label> <br />
+
+
+        <label for="">Languages</label>
+        <input type="checkbox" />
+        <label for="">English</label>
+        <input type="checkbox" />
+        <label for="">Marathi</label>
+        <input type="checkbox" />
+        <label type="">Hindi</label>
+
+        <label for="">DOB</label>
+        <input type="date" />
+
+        <input type="time" name="" id="" />
+
+        <input type="datetime-local" name="" id="" />
+
+        <select multiple name="" id="">
+            <optgroup label="FrontEnd">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            </optgroup>
+
+            <optgroup label="BackEnd">
+                <option value="java">java</option>
+                <option value="spring">Spring</option>
+                <option value="db">Database</option>
+            </optgroup>
+        </select>
+
+        <input list="city" type="text">
+        <datalist id="city">
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore</option>
+        </datalist>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="file" accept="image/jpg" name="" id="">
+
+        <input value="Sign up" type="submit" />
+        <button type="button">Login</button>
+        <input type="reset" />
+
+        </form>
+        </body>
+        </html>

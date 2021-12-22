@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            color: white;
+            height: 300px;
+            width: 300px;
+        }
+       
+        body{
+            transform-style: preserve-3d;
+            perspective: 200px;
+        }
+        img:hover{
+            transform: scale(2);
+            transition-duration: 5s;
+        }
+        .container:hover{
+            transform: translate(400px);
+            transform: rotate(180deg);
+            transform: scaleY(2);
+
+            Transform: skewY(70deg);
+            transform: translate(400px,300px);
+            transform: translateZ(-200);
+            transition-duration: 15s;
+            transition-delay: 1s;
+        }
+        span{
+            float: right;
+        }
+        span:hover{
+            transform:translateX(-1200px);
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Codekul</h1>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1610122748280-d0ae76b10750?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGJhYnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="" height="200px" width="200px">
+    <span>Codekul</span>
+</body>
+</html>

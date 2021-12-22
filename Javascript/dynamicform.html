@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                Create a Form Dynamically with 
+                the JavaScript
+            </title>
+        </head>
+        <body style ="text-align: center;">
+            <h1 style ="color: green;">
+                STUDENT MARKSHEET FORM
+            </h1>
+            <button onClick="GFG_Fun()">
+                click here
+            </button>
+            <p id="GFG_DOWN"></p>
+     <script>
+        var down = document.getElementById("GFG_DOWN");
+                
+        var br = document.createElement("br"); 
+        function GFG_Fun() {
+        
+        var form = document.createElement("form");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", "submit.php");
+      
+        var FN = document.createElement("input");
+        FN.setAttribute("type", "text");
+        FN.setAttribute("name", "FullName");
+        FN.setAttribute("placeholder", "Student Full Name");
+      
+      
+         var DOB = document.createElement("input");
+         DOB.setAttribute("type", "text");
+         DOB.setAttribute("name", "marks");
+         DOB.setAttribute("placeholder", "Hindi marks");
+      
+     
+         var EID = document.createElement("input");
+         EID.setAttribute("type", "text");
+         EID.setAttribute("name", "marks");
+         EID.setAttribute("placeholder", "English marks");
+      
+          
+          var PWD = document.createElement("input");
+          PWD.setAttribute("type", "text");
+          PWD.setAttribute("name", "marks");
+          PWD.setAttribute("placeholder", "Maths marks");
+      
+           
+           var RPWD = document.createElement("input");
+           RPWD.setAttribute("type", "text");
+           RPWD.setAttribute("name", "marks");
+           RPWD.setAttribute("placeholder", "physics marks");
+      
+                    
+                    var s = document.createElement("input");
+                    s.setAttribute("type", "submit");
+                    s.setAttribute("value", "Submit");
+                      
+                    
+                    form.appendChild(FN); 
+                      
+                  
+                    form.appendChild(br.cloneNode()); 
+                      
+                    form.appendChild(DOB); 
+                    form.appendChild(br.cloneNode()); 
+                      
+                   
+                    form.appendChild(EID); 
+                    form.appendChild(br.cloneNode()); 
+                      
+                
+                    form.appendChild(PWD); 
+                    form.appendChild(br.cloneNode()); 
+                    
+                    form.appendChild(RPWD); 
+                    form.appendChild(br.cloneNode()); 
+                      
+                   
+                    form.appendChild(s); 
+      
+                    document.getElementsByTagName("body")[0]
+                   .appendChild(form);
+                }
+            </script>
+        </body>
+    </html>
