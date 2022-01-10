@@ -1,0 +1,12 @@
+@mixin card($textColor, $height, $width, $bgColor){
+    color: $textColor;
+    height: $height;
+    width: $width;
+    background-color: $bgColor;
+    }
+    .news{
+        @include card(red,100px, 300px)
+    }
+    .sports{
+        @include card(blue,200px, 500px,green)
+    }
